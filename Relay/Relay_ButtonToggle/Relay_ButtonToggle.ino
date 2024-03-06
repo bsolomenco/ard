@@ -3,7 +3,7 @@ const int BTN_PIN = 8;
 
 void info(){//display useful information
     char buf[256]{};
-    snprintf(buf, sizeof(buf), "%s() RLY_PIN=%d BTN_PIN=%d", __FUNCTION__, RLY_PIN, BTN_PIN);
+    snprintf(buf, sizeof(buf), "%s %s() RLY_PIN=%d BTN_PIN=%d", __FILE__, __FUNCTION__, RLY_PIN, BTN_PIN);
     Serial.println(buf);
 }
 
