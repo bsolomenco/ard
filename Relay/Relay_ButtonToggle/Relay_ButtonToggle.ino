@@ -1,5 +1,6 @@
-const int RLY_PIN = 9;
-const int BTN_PIN = 8;
+//pins 2-7 are used by LCD16x2 shield
+const int RLY_PIN = 8;  //Arduino pin connected to relay's IN
+const int BTN_PIN = 9;  //Arduino pin connected to button's OUT
 
 void info(){//display useful information
     char buf[256]{};
